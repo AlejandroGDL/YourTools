@@ -1,0 +1,19 @@
+{
+  "name": "yourtools",
+  "version": "1.0.0",
+  "description": "A collection of powerful web tools with a backend API.",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.19.2",
+    "mathjs": "^12.4.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}

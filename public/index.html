@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YourTools | Suite de Web Tools</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <p class="tool-badge">Suite Full-Stack</p>
+      <h1 class="hero-title">YourTools</h1>
+      <p class="hero-subtitle">
+        Un hub de herramientas web con backend dedicado para procesar texto, cálculos
+        avanzados, conversiones y generación segura. Diseñado para ser rápido, moderno
+        y extensible.
+      </p>
+      <a class="cta" href="#tools">Ver todas las herramientas</a>
+    </header>
+
+    <main>
+      <section id="tools">
+        <div class="tools-grid">
+          <article class="tool-card" id="text-analyzer">
+            <div class="tool-header">
+              <h3 class="tool-title">Analizador de texto</h3>
+              <span class="tool-badge">/api/text/analyze</span>
+            </div>
+            <p class="tool-description">
+              Envía texto crudo y obtén métricas en tiempo real: conteo de
+              caracteres, palabras, oraciones y una vista previa resumida.
+            </p>
+            <a class="cta ghost" href="/tools/text-analyzer.html">Abrir página dedicada</a>
+            <textarea id="text-input" placeholder="Pega tu texto aquí"></textarea>
+            <button id="text-submit">Analizar texto</button>
+            <div class="result" id="text-result">Aún no has analizado texto.</div>
+          </article>
+
+          <article class="tool-card" id="math-lab">
+            <div class="tool-header">
+              <h3 class="tool-title">Laboratorio matemático</h3>
+              <span class="tool-badge">/api/math/calc</span>
+            </div>
+            <p class="tool-description">
+              Evalúa expresiones matemáticas con respaldo en el backend. Soporta
+              funciones y operaciones avanzadas de forma segura.
+            </p>
+            <a class="cta ghost" href="/tools/math-lab.html">Abrir página dedicada</a>
+            <input id="math-input" placeholder="Ej: (5 * 3.4) + sqrt(16)" />
+            <button id="math-submit">Calcular</button>
+            <div class="result" id="math-result">Introduce una expresión para comenzar.</div>
+          </article>
+
+          <article class="tool-card" id="base64">
+            <div class="tool-header">
+              <h3 class="tool-title">Conversor Base64</h3>
+              <span class="tool-badge">/api/base64</span>
+            </div>
+            <p class="tool-description">
+              Codifica o decodifica cadenas usando Base64 sin exponer tus datos en
+              el cliente.
+            </p>
+            <a class="cta ghost" href="/tools/base64.html">Abrir página dedicada</a>
+            <textarea id="base64-input" placeholder="Texto a codificar o decodificar"></textarea>
+            <div class="inline-controls">
+              <select id="base64-mode">
+                <option value="encode">Codificar</option>
+                <option value="decode">Decodificar</option>
+              </select>
+              <button id="base64-submit">Procesar</button>
+            </div>
+            <div class="result" id="base64-result">Esperando datos...</div>
+          </article>
+
+          <article class="tool-card" id="password-maker">
+            <div class="tool-header">
+              <h3 class="tool-title">Generador de contraseñas</h3>
+              <span class="tool-badge">/api/password</span>
+            </div>
+            <p class="tool-description">
+              Genera contraseñas robustas con control granular sobre longitud y
+              tipos de caracteres soportados en el backend.
+            </p>
+            <a class="cta ghost" href="/tools/password-maker.html">Abrir página dedicada</a>
+            <div class="inline-controls">
+              <input type="number" id="password-length" placeholder="Longitud (4-64)" min="4" max="64" />
+              <label><input type="checkbox" id="pw-lower" checked /> Minúsculas</label>
+              <label><input type="checkbox" id="pw-upper" checked /> Mayúsculas</label>
+              <label><input type="checkbox" id="pw-numbers" checked /> Números</label>
+              <label><input type="checkbox" id="pw-symbols" checked /> Símbolos</label>
+            </div>
+            <button id="password-submit">Generar</button>
+            <div class="result" id="password-result">Genera tu primera contraseña segura.</div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      Backend listo en <strong>Node.js</strong> + <strong>Express</strong> · Todas las
+      herramientas se sirven desde la misma API.
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Laboratorio matemático | YourTools</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <header>
+      <p class="tool-badge">Herramienta individual</p>
+      <h1 class="hero-title">Laboratorio matemático</h1>
+      <p class="hero-subtitle">
+        Evalúa expresiones matemáticas con respaldo en el backend. Soporta
+        funciones y operaciones avanzadas de forma segura.
+      </p>
+      <div class="cta-group">
+        <a class="cta" href="/">Volver al catálogo</a>
+        <a class="cta ghost" href="/api/math/calc" target="_blank">Ver endpoint</a>
+      </div>
+    </header>
+
+    <main>
+      <section id="tools">
+        <div class="tools-grid">
+          <article class="tool-card" id="math-lab">
+            <div class="tool-header">
+              <h3 class="tool-title">Laboratorio matemático</h3>
+              <span class="tool-badge">POST /api/math/calc</span>
+            </div>
+            <p class="tool-description">
+              Evalúa expresiones matemáticas con respaldo en el backend. Soporta
+              funciones y operaciones avanzadas de forma segura.
+            </p>
+            <input id="math-input" placeholder="Ej: (5 * 3.4) + sqrt(16)" />
+            <button id="math-submit">Calcular</button>
+            <div class="result" id="math-result">Introduce una expresión para comenzar.</div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      Backend listo en <strong>Node.js</strong> + <strong>Express</strong> · Todas las
+      herramientas se sirven desde la misma API.
+    </footer>
+
+    <script src="../main.js"></script>
+  </body>
+</html>

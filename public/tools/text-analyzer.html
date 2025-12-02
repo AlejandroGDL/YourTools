@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Analizador de texto | YourTools</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <header>
+      <p class="tool-badge">Herramienta individual</p>
+      <h1 class="hero-title">Analizador de texto</h1>
+      <p class="hero-subtitle">
+        Envía texto crudo y obtén métricas en tiempo real: conteo de caracteres,
+        palabras, oraciones y una vista previa resumida.
+      </p>
+      <div class="cta-group">
+        <a class="cta" href="/">Volver al catálogo</a>
+        <a class="cta ghost" href="/api/text/analyze" target="_blank">Ver endpoint</a>
+      </div>
+    </header>
+
+    <main>
+      <section id="tools">
+        <div class="tools-grid">
+          <article class="tool-card" id="text-analyzer">
+            <div class="tool-header">
+              <h3 class="tool-title">Analizador de texto</h3>
+              <span class="tool-badge">POST /api/text/analyze</span>
+            </div>
+            <p class="tool-description">
+              Envía texto crudo y obtén métricas en tiempo real: conteo de
+              caracteres, palabras, oraciones y una vista previa resumida.
+            </p>
+            <textarea id="text-input" placeholder="Pega tu texto aquí"></textarea>
+            <button id="text-submit">Analizar texto</button>
+            <div class="result" id="text-result">Aún no has analizado texto.</div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      Backend listo en <strong>Node.js</strong> + <strong>Express</strong> · Todas las
+      herramientas se sirven desde la misma API.
+    </footer>
+
+    <script src="../main.js"></script>
+  </body>
+</html>

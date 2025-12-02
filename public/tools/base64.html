@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conversor Base64 | YourTools</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <header>
+      <p class="tool-badge">Herramienta individual</p>
+      <h1 class="hero-title">Conversor Base64</h1>
+      <p class="hero-subtitle">
+        Codifica o decodifica cadenas usando Base64 sin exponer tus datos en el
+        cliente.
+      </p>
+      <div class="cta-group">
+        <a class="cta" href="/">Volver al catálogo</a>
+        <a class="cta ghost" href="/api/base64" target="_blank">Ver endpoint</a>
+      </div>
+    </header>
+
+    <main>
+      <section id="tools">
+        <div class="tools-grid">
+          <article class="tool-card" id="base64">
+            <div class="tool-header">
+              <h3 class="tool-title">Conversor Base64</h3>
+              <span class="tool-badge">POST /api/base64</span>
+            </div>
+            <p class="tool-description">
+              Codifica o decodifica cadenas usando Base64 sin exponer tus datos en el
+              cliente.
+            </p>
+            <textarea id="base64-input" placeholder="Texto a codificar o decodificar"></textarea>
+            <div class="inline-controls">
+              <select id="base64-mode">
+                <option value="encode">Codificar</option>
+                <option value="decode">Decodificar</option>
+              </select>
+              <button id="base64-submit">Procesar</button>
+            </div>
+            <div class="result" id="base64-result">Esperando datos...</div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      Backend listo en <strong>Node.js</strong> + <strong>Express</strong> · Todas las
+      herramientas se sirven desde la misma API.
+    </footer>
+
+    <script src="../main.js"></script>
+  </body>
+</html>
